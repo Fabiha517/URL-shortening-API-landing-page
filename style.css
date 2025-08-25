@@ -21,8 +21,7 @@ body {
   font-size: 30px;
 }
 .menu {
-  position: absolute;
-  right: -400px;
+  display: none;
 }
 
 .illustrationSvg {
