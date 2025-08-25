@@ -185,14 +185,32 @@ footer > * {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  gap: 10px;
+}
+footer .logo{
+  margin-bottom: 10%;
 }
 footer strong {
   color: white;
+  margin-bottom: 10px;
 }
 footer a {
   text-decoration: none;
   color: hsl(257, 7%, 63%);
+}
+.features{
+  margin-bottom: 30px;
+}
+.resources{
+  margin-bottom:30px ;
+}
+.company{
+  margin-bottom: 30px;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 @media (min-width: 600px) {
   .menu {
