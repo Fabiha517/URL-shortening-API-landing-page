@@ -105,9 +105,13 @@ body {
 .bottom {
   padding: 7%;
 }
+.dashboardSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .dashboard {
   background-color: rgb(248, 247, 247);
-  margin-bottom: 15vh;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -137,11 +141,58 @@ body {
   justify-self: anchor-center;
   top: -18%;
   border-radius: 50%;
-  height: 14vh;
+  height: 12vh;
   width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.connection {
+  height: 15vh;
+  width: 2vw;
+  background-color: hsl(180, 66%, 49%);
+}
+.dashboard3 {
+  margin-bottom: 12vh;
+}
+.BoostSection {
+  background-color: hsl(257, 27%, 26%);
+  height: 43vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  background-image: url("images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.BoostSection .getStarted {
+  margin-bottom: 0px;
+  height: 9vh;
+}
+.BoostSection h2 {
+  color: white;
+  font-size: 25px;
+}
+footer {
+  background-color: hsl(260, 8%, 14%);
+  padding: 10%;
+}
+footer > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+footer strong {
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(257, 7%, 63%);
 }
 @media (min-width: 600px) {
   .menu {
