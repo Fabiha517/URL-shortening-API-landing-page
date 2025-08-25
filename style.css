@@ -7,6 +7,7 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 6%;
   text-align: center;
+  overflow-x: hidden;
 }
 .nav {
   width: 100%;
@@ -50,9 +51,8 @@ body {
 .inputBox {
   display: flex;
   flex-direction: column;
-
-  height: 22vh;
-  gap: 2vh;
+  height: 30vh;
+  gap: 3vh;
   padding: 5%;
   margin-block: 9vh;
   background-color: hsl(257, 27%, 26%);
