@@ -1,327 +1,640 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-	font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 
-	text-align: center;
-	overflow-x: hidden;
+  text-align: center;
+  overflow-x: hidden;
 }
 .top {
-	padding: 6%;
-	position: relative;
+  padding: 6%;
+  position: relative;
 }
 .nav {
-	width: 100%;
-	height: 9vh;
-	margin-bottom: 2%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  width: 100%;
+  height: 9vh;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav h1 {
-	color: hsl(255, 11%, 22%);
-	font-size: 30px;
+  color: hsl(255, 11%, 22%);
+  font-size: 30px;
 }
 .menu {
-	display: none;
+  display: none;
 }
 
 .illustrationSvg {
-	object-fit: contain;
-	width: 140%;
+  object-fit: contain;
+  width: 140%;
 }
 .descriptionSection h1 {
-	font-size: 37px;
-	line-height: 1.2;
-	color: hsl(255, 11%, 22%);
+  font-size: 37px;
+  line-height: 1.2;
+  color: hsl(255, 11%, 22%);
 }
 .descParagraph {
-	color: hsl(257, 7%, 63%);
+  color: hsl(257, 7%, 63%);
 }
 .getStarted {
-	border: none;
-	background-color: hsl(180, 66%, 49%);
-	color: white;
-	height: 7vh;
-	width: 50vw;
-	margin-block: 2vh;
-	border-radius: 35px;
-	font-size: 17px;
-	font-weight: 900;
-	margin-bottom: 20vh;
+  border: none;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  height: clamp(45px, 6vh, 65px);
+  width: 50vw;
+  margin-block: 2vh;
+  border-radius: 35px;
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 20vh;
+  transition: background-color 0.3s ease;
+
 }
 .inputBox {
-	display: flex;
-	flex-direction: column;
-	height: 23vh;
-	gap: 3vh;
-	padding: 5%;
-	background-color: hsl(257, 27%, 26%);
-	justify-content: center;
-	border-radius: 10px;
-	background-image: url("images/bg-shorten-mobile.svg");
-	background-position: right 0px top -10px;
-	background-repeat: no-repeat;
-	position: absolute;
-	bottom: -10%;
-	width: 80vw;
-	transform: translateX(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding: 5%;
+  background-color: hsl(257, 27%, 26%);
+  justify-content: space-between;
+  border-radius: 10px;
+  background-image: url("images/bg-shorten-mobile.svg");
+  background-position: right 0px top -10px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -10%;
+  width: 80vw;
+  transform: translateX(10px);
+  height: clamp(150px, 20vh, 250px);
 }
 .inputBox > * {
-	height: 36%;
-	border-radius: 5px;
-	border: none;
-	padding-left: 5%;
+  height: 36%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 1%;
 }
 .inputBox input {
-	font-size: 15px;
+  font-size: 15px;
 }
 .shortenIt {
-	background-color: hsl(180, 66%, 49%);
-	color: white;
-	font-size: 17px;
-	font-weight: 900;
+  background-color: hsl(180, 66%, 49%);
+  min-height: 6vh;
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+
 }
 .statSection h2 {
-	color: hsl(260, 8%, 14%);
-	margin-bottom: 3vh;
-	font-size: 22px;
-	margin-top: 20vh;
+  color: hsl(260, 8%, 14%);
+  margin-bottom: 3vh;
+  font-size: 22px;
+  margin-top: 20vh;
 }
 .statsParagraph {
-	font-size: 14.5px;
-	color: hsl(257, 7%, 63%);
-	font-weight: 500;
-	line-height: 1.7;
-	margin-bottom: 10vh;
+  font-size: 14.5px;
+  color: hsl(257, 7%, 63%);
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 10vh;
 }
 .bottomWrapper {
-	background-color: hsl(240, 7%, 94%);
-	padding: 0px;
+  background-color: hsl(240, 7%, 94%);
+  padding: 0px;
 }
 .bottom {
-	padding: 7%;
+  padding: 7%;
 }
 .dashboardSection {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 90px; */
 }
 .dashboard {
-	background-color: rgb(248, 247, 247);
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	padding: 5%;
-	padding-bottom: 8%;
-	position: relative;
+  background-color: rgb(248, 247, 247);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 5%;
+  padding-bottom: 8%;
+  position: relative;
 }
 .dashboard h3 {
-	margin-bottom: 3%;
-	margin-top: 20%;
-	color: hsl(255, 11%, 22%);
+  margin-bottom: 3%;
+  margin-top: 20%;
+  color: hsl(255, 11%, 22%);
 }
 .dashboard p {
-	font-size: 15px;
-	color: hsl(257, 7%, 63%);
+  font-size: 15px;
+  color: hsl(257, 7%, 63%);
 }
 .dashboard img {
-	height: 50%;
-	width: 60%;
-	align-self: center;
-	padding: 1%;
+  height: 50%;
+  width: 60%;
+  align-self: center;
+  padding: 1%;
 }
 .Svg {
-	position: absolute;
-	background-color: hsl(257, 27%, 26%);
-	justify-self: anchor-center;
-	top: -18%;
-	border-radius: 50%;
-	height: 12vh;
-	width: 25%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  position: absolute;
+  background-color: hsl(257, 27%, 26%);
+  justify-self: anchor-center;
+  top: -18%;
+  border-radius: 50%;
+  height: 12vh;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .connection {
-	height: 15vh;
-	width: 2vw;
-	background-color: hsl(180, 66%, 49%);
+  height: 15vh;
+  width: 2vw;
+  background-color: hsl(180, 66%, 49%);
 }
 .dashboard3 {
-	margin-bottom: 12vh;
+  margin-bottom: 12vh;
 }
 .BoostSection {
-	background-color: hsl(257, 27%, 26%);
-	height: 43vh;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 5%;
-	background-image: url("images/bg-boost-mobile.svg");
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-color: hsl(257, 27%, 26%);
+  height: 43vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  background-image: url("images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .BoostSection .getStarted {
-	margin-bottom: 0px;
-	height: 9vh;
+  margin-bottom: 0px;
+  height: clamp(45px, 6vh, 65px);
+  transition: background-color 0.3s ease;
+
 }
 .BoostSection h2 {
-	color: white;
-	font-size: 25px;
+  color: white;
+  font-size: 25px;
 }
 footer {
-	background-color: hsl(260, 8%, 14%);
-	padding: 10%;
+  background-color: hsl(260, 8%, 14%);
+  padding: 10%;
 }
 footer > * {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 footer .logo {
-	margin-bottom: 10%;
+  margin-bottom: 10%;
 }
 footer strong {
-	color: white;
-	margin-bottom: 10px;
+  color: white;
+  margin-bottom: 10px;
 }
 footer a {
-	text-decoration: none;
-	color: hsl(257, 7%, 63%);
+  text-decoration: none;
+  color: hsl(257, 7%, 63%);
 }
 .features {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .resources {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .company {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .icons {
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
+.icons svg path{
+  color: #FFF;
+
+}
+
 .menusvg {
-	cursor: pointer;
+  cursor: pointer;
 }
 .menuOp {
-	position: absolute;
-	top: 12%;
-	width: 90vw;
-	background-color: hsl(257, 27%, 26%);
+  position: absolute;
+  top: 12%;
+  width: 90vw;
+  background-color: hsl(257, 27%, 26%);
 
-	justify-self: anchor-center;
-	border-radius: 10px;
-	padding: 8%;
+  justify-self: anchor-center;
+  border-radius: 10px;
+  padding: 8%;
 }
 .menuOp .menu {
-	display: block;
-	height: 100%;
+  display: block;
+  height: 100%;
 }
 .menuOp .menu a {
-	height: 100%;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	text-decoration: none;
-	font-weight: 700;
-	margin-block: 4vh;
-	font-size: 18px;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-weight: 700;
+  margin-block: 4vh;
+  font-size: 18px;
 }
 .menuOp .menu .menuFeatures {
-	margin-top: 0px;
+  margin-top: 0px;
 }
 .menuOp .menu .left {
-	margin-bottom: 5vh;
-	border-bottom: 1px solid hsl(0, 0%, 75%, 0.3);
+  margin-bottom: 5vh;
+  border-bottom: 1px solid hsl(0, 0%, 75%, 0.3);
 }
 .menuOp .menu .right .signup {
-	border: none;
-	background-color: hsl(180, 66%, 49%);
-	height: 6vh;
-	width: 40vw;
-	border-radius: 20px;
-	color: white;
-	font-weight: 900;
+  border: none;
+  background-color: hsl(180, 66%, 49%);
+
+  height: clamp(40px, 6vh, 55px);
+  width: 40vw;
+  border-radius: 20px;
+  color: white;
+  font-weight: 900;
+  transition: background-color 0.3s ease;
+}
+.menu a:hover {
+  color: black;
+  cursor: pointer;
+}
+.right .signup:hover {
+  cursor: pointer;
+  background-color: hsl(180, 68%, 71%);
+}
+.getStarted:hover {
+  cursor: pointer;
+  background-color: hsl(180, 68%, 71%);
+}
+.shortenIt:hover {
+  cursor: pointer;
+  background-color: hsl(180, 68%, 71%);
+}
+.links a:hover
+{cursor: pointer;
+  color: rgb(0, 162, 255);
+}
+.links .icons:hover{
+  cursor: pointer;
+  color:rgb(41, 219, 204) ;
+
+}
+.icons svg :hover{
+  color:rgb(41, 219, 204) ;
+
+}
+input.error::placeholder{
+  color: rgba(255, 20, 0, 0.6);
+}
+.inputErr{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.inputBox input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+    min-height: 75%;
+    width: 100%;
+    padding-left: 2%;
+  }
+.alertMsg{
+  display: flex;
+  color: rgba(255, 20, 0, 0.6);
+  width: 100%;
+  height: 0;
+  align-self: flex-start;
 }
 @media (min-width: 600px) {
-	.menu {
-		position: static;
-		display: flex !important;
-		left: 0 !important;
-		width: auto;
-		background: none;
-		transition: none;
-		z-index: auto;
-		height: auto;
-		top: 0;
-		justify-content: space-between;
-		width: 100%;
-		align-items: center;
-	}
-	.left a {
-		margin: 0px 15px;
+  .menu {
+    position: static;
+    display: flex !important;
+    left: 0 !important;
+    width: auto;
+    background: none;
+    transition: none;
+    z-index: auto;
+    height: auto;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .left a {
+    margin: 0px 15px;
 
-		color: hsl(257, 7%, 63%);
-	}
-	.right a {
-		color: hsl(257, 7%, 63%);
-		margin-right: 15px;
-	}
-	.right .signup {
-		background-color: hsl(180, 66%, 49%);
-		width: 10vw;
-		height: 4vh;
-		border: none;
-		color: white;
-		font-weight: 700;
-		border-radius: 30px;
-	}
-	.menusvg {
-		display: none;
-	}
-	.menu a {
-		text-decoration: none;
-	}
-	.logo {
-		margin-right: 15px;
-	}
-	.illustrationImage {
-		width: 50%;
-	}
-	.top {
-		padding-top: 2%;
-	}
-	.nav {
-		margin-bottom: 8%;
-	}
-	.getStarted {
-		width: 20vw;
-		height: 6vh;
-		font-weight: 600;
-	}
-	.descriptionSection {
-		display: flex;
-		flex-direction: row-reverse;
+    color: hsl(257, 7%, 63%);
+  }
+  .right a {
+    color: hsl(257, 7%, 63%);
+    margin-right: 15px;
+  }
+  .right .signup {
+    background-color: hsl(180, 66%, 49%);
+    width: 10vw;
 
-		text-align: start;
-	}
-	.description {
-		width: 65%;
-	}
-	.inputBox{
-		background-image: url("images/bg-shorten-desktop.svg");
-	}
+    height: clamp(40px, 6vh, 47px);
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 30px;
+  }
+  .menusvg {
+    display: none;
+  }
+  .menu a {
+    text-decoration: none;
+  }
+  .logo {
+    margin-right: 15px;
+  }
+  .illustrationImage {
+    width: 50%;
+  }
+  .top {
+    padding-top: 2%;
+  }
+  .nav {
+    margin-bottom: 8%;
+  }
+  .getStarted {
+    width: 20vw;
+    height: clamp(45px, 8vh, 65px);
+
+    font-weight: 600;
+  }
+  .descriptionSection {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: start;
+  }
+  .description {
+    width: 65%;
+  }
+  .inputBox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: clamp(100px, 8vh, 140px);
+    padding: 2%;
+    justify-self: center;
+    justify-content: flex-start;
+    background-image: url("images/bg-shorten-desktop.svg");
+  }
+  .inputBox input {
+    height: 100%;
+    width: 100%;
+  }
+  .shortenIt {
+    height: 70%;
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+  }
+  .description .getStarted {
+    margin-bottom: 130px;
+  }
+  .statSection h2 {
+    margin-top: 70px;
+  }
+
+  .statsParagraph {
+    max-width: 50vw;
+    justify-self: center;
+  }
+  .dashboardSection {
+    flex-direction: row;
+    max-width: 80vw;
+    justify-self: center;
+  }
+  .dashboard {
+    max-width: 31%;
+    height: 250px;
+    text-align: left;
+    padding: 2%;
+    justify-content: flex-start;
+  }
+  .dashboard h3 {
+    margin-bottom: 3%;
+    margin-top: 10%;
+    color: hsl(255, 11%, 22%);
+    font-size: large;
+  }
+
+  .dashboard p {
+    font-size: 13px;
+    color: hsl(257, 7%, 63%);
+  }
+  .connection {
+    height: 2vh;
+    width: 10vw;
+  }
+  .Svg {
+    top: -20%;
+    height: clamp(70px, 7vh, 100px);
+    width: 25%;
+    justify-self: unset;
+  }
+  .dashboard2 {
+    margin-top: 13vh;
+  }
+
+  .dashboard3 {
+    margin-bottom: 0px;
+    margin-top: 22vh;
+  }
+  .statsParagraph {
+    margin-bottom: 17px;
+  }
+  .BoostSection {
+    height: 200px;
+    background-image: url("images/bg-boost-desktop.svg");
+  }
+  footer {
+    display: flex;
+    align-items: flex-start;
+    padding: 8% 3%;
+    justify-content: center;
+    gap: 5%;
+  }
+  footer a {
+    align-self: flex-start;
+  }
+  .features strong {
+    align-self: flex-start;
+  }
+  .features {
+    text-align: justify;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5%;
+    margin: 2%;
+    margin-top: 0;
+  }
+  .inputErr{
+    height: 70%;
+  width: 75%;
+  }
+}
+@media (min-width: 1024px) {
+  .dashboard {
+    height: 199px;
+  }
+  .description {
+    width: 50%;
+  }
+  .illustrationImage {
+    width: 45%;
+  }
+  .descriptionSection {
+    gap: 5%;
+  }
+  .descriptionSection h1 {
+    font-size: 58px;
+  }
+  .descParagraph {
+    max-width: 87%;
+  }
+  .BoostSection .getStarted {
+    height: 8vh;
+  }
+  footer {
+    padding: 8%;
+    padding-right: 12%;
+    justify-content: space-between;
+  }
+  .links {
+    gap: 16%;
+  }
+}
+@media (min-width: 1440px) {
+  .menu {
+    font-size: 19px;
+  }
+  .description h1 {
+    font-size: 85px;
+  }
+  .descParagraph {
+    font-size: 23px;
+  }
+  .description .getStarted {
+    font-size: 20px;
+    height: 9vh;
+  }
+  .inputBox {
+    height: 150px;
+  }
+  .statsParagraph {
+    font-size: larger;
+  }
+  .dashboard {
+    height: 215px;
+  }
+  .dashboard p {
+    font-size: 15px;
+  }
+  .BoostSection {
+    padding: 0%;
+    height: 250px;
+  }
+
+  footer {
+    font-size: larger;
+  }
+}
+@media (min-width: 2560px) {
+  .menu {
+    font-size: 29px;
+  }
+  .right .signup {
+    width: 7vw;
+    font-size: 21px;
+  }
+  .logo {
+    height: 60px;
+  }
+  .nav {
+    margin-bottom: 3%;
+  }
+  .description h1 {
+    font-size: 105px;
+  }
+  .descParagraph {
+    font-size: 45px;
+  }
+  .description .getStarted {
+    border-radius: 60px;
+    font-size: 40px;
+  }
+  .inputBox {
+    height: 200px;
+    padding: 1.5%;
+  }
+  .inputBox input {
+    font-size: 30px;
+  }
+  .shortenIt {
+    font-size: 30px;
+  }
+  .statSection h2 {
+    font-size: 55px;
+  }
+  .statsParagraph {
+    font-size: 35px;
+  }
+  .dashboard {
+    height: 370px;
+  }
+  .dashboard p {
+    font-size: 25px;
+  }
+  .dashboard h3 {
+    font-size: 30px;
+  }
+  .Svg {
+    height: 11vh;
+  }
+  .BoostSection {
+    height: 470px;
+  }
+  .BoostSection h2 {
+    font-size: 40px;
+  }
+  .BoostSection .getStarted {
+    font-size: 25px;
+  }
+  .links {
+    font-size: 30px;
+  }
 }
