@@ -11,11 +11,14 @@ body {
 }
 .top {
   padding: 6%;
+  padding-right: 0%;
   position: relative;
+ 
 }
 .nav {
   width: 100%;
   height: 9vh;
+  padding-right: 6%;
   margin-bottom: 2%;
   display: flex;
   justify-content: space-between;
@@ -29,13 +32,22 @@ body {
 .menu {
   display: none;
 }
+.illustrationImage{
+   width: 100%;         
+  overflow: hidden;   
+  position: relative;
+  margin-bottom: 5%;
+}
 
 .illustrationSvg {
-  object-fit: contain;
+  display: block;
   width: 140%;
 }
+.description{
+  padding-right: 6%;
+}
 .descriptionSection h1 {
-  font-size: 37px;
+  font-size: 32px;
   line-height: 1.2;
   color: hsl(255, 11%, 22%);
 }
@@ -59,7 +71,7 @@ body {
 .inputBox {
   display: flex;
   flex-direction: column;
-  gap: 3vh;
+  gap: 1vh;
   padding: 5%;
   background-color: hsl(257, 27%, 26%);
   justify-content: space-between;
@@ -84,7 +96,7 @@ body {
 }
 .shortenIt {
   background-color: hsl(180, 66%, 49%);
-  min-height: 6vh;
+  min-height: 39%;
   color: white;
   font-size: 17px;
   font-weight: 900;
@@ -312,20 +324,21 @@ input.error::placeholder{
 .inputErr{
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 70%;
   width: 100%;
 }
 .inputBox input {
   border-radius: 5px;
   border: none;
   outline: none;
-    min-height: 75%;
+    min-height: 80%;
     width: 100%;
     padding-left: 2%;
   }
 .alertMsg{
   display: flex;
-  color: rgba(255, 20, 0, 0.6);
+  color: rgba(223, 61, 21, 0.822);
+  font-size: 10px;
   width: 100%;
   height: 0;
   align-self: flex-start;
@@ -376,11 +389,14 @@ input.error::placeholder{
   .illustrationImage {
     width: 50%;
   }
+  .descriptionSection h1{
+    font-size: 36px;
+  }
   .top {
     padding-top: 2%;
   }
   .nav {
-    margin-bottom: 8%;
+    margin-bottom: 3%;
   }
   .getStarted {
     width: 20vw;
@@ -395,11 +411,13 @@ input.error::placeholder{
     text-align: start;
   }
   .description {
+    padding-right: 0%;
     width: 65%;
   }
   .inputBox {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 3vh;
     align-items: center;
     height: clamp(100px, 8vh, 140px);
     padding: 2%;
@@ -515,16 +533,13 @@ input.error::placeholder{
     width: 50%;
   }
   .illustrationImage {
-    width: 45%;
-  }
-  .descriptionSection {
-    gap: 5%;
+    width: 55%;
   }
   .descriptionSection h1 {
     font-size: 58px;
   }
   .descParagraph {
-    max-width: 87%;
+    max-width: 78%;
   }
   .BoostSection .getStarted {
     height: 8vh;

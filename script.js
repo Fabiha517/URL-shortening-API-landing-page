@@ -25,14 +25,16 @@ function EnterUrl() {
   const ShortenBtn = document.querySelector(".shortenIt");
   const inputBox = document.querySelector(".inputBox");
 
-  const alert = document.querySelector(".alertMsg");
+  const alert = document.createElement("div")
+  alert.className="alertMsg"
   alert.textContent="Please add a link"
-  alert.style.display = "none";
+  
   ShortenBtn.addEventListener("click", () => {
     if (input.value.trim() === "") {
       input.classList.add("error");
       input.style.border = "2px solid rgba(255, 20, 0, 0.9)";
       alert.style.display = "flex";
+      input.insertAdjacentElement("afterend",alert)
     } else {
       input.classList.remove("error"); // resets to normal
       input.style.border = "";
